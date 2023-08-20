@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="temp.jpg">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Celsius to Fahrenheit</h2>
+        <div class="inputdiv">
+            <input type="text" id="input" placeholder="C to F">
+        </div>
+        <div>
+            <button type="submit" onclick="convert()">Convert</button>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+    <script>
+      function convert(){
+        const fVal = Number(document.getElementById("input").value)
+        const cVal = fVal*(9/5)+32
+        const result = document.getElementById("result")
+        result.innerHTML = cVal.toFixed(1) + " F"
+      }
+    </script>
+</body>
+</html>
