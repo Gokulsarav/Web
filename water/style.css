@@ -1,0 +1,54 @@
+body
+{
+    background-image: url("body.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.imgage
+{
+    width: 5%;
+    height: 10;
+    vertical-align: middle;
+}
+.water
+{
+    position: relative;
+    text-align: center;  
+}
+
+.polu
+{
+    color: green;
+}
+
+.imgage2
+{
+    width: 35%;
+    height: 50%;
+    margin-left: 5%;
+}
+
+.list
+{
+    margin-left: 47%;
+    margin-top: -15%;
+    font-size: large;
+}
+
+.button
+{
+    border-radius: 5px;
+    background-color: lightskyblue;
+    border: solid 2px;
+    cursor: pointer;
+    margin-left: 60%;
+    margin-top: -45%;
+}
+
+.upp
+{
+    margin-left: 20%;
+    margin-top: -4.7%;
+}
