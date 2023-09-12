@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bor">
+    <h1>
+        Rock Paper Scissor
+    </h1>
+
+    <div>
+    <button class="but" onclick="
+        let num=Math.random();
+        let commove='';
+        if(num >=0 && num<1/3)
+        {
+            commove='rock';
+        }
+
+        else if(num >=1/3 && num<2/3)
+        {
+            commove='Paper';
+        }
+
+        if(num >=2/3 && num<1)
+        {
+            commove='Scissor';
+        }
+
+        let result='';
+        if(commove === 'rock')
+        {
+            result='Tie...';
+        }
+
+        else if(commove === 'Paper')
+        {
+            result='You Lose Hahaha...';
+        }
+
+        if(commove === 'Scissor')
+        {
+            result='You Won...';
+        }
+
+        document.getElementById('demo').innerHTML=(`You picked Rock. Computer picked ${commove}.${result}`);
+    ">Rock
+    </button>
+
+    <button class="but" onclick="
+    let num=Math.random();
+    let commove='';
+    if(num >=0 && num<1/3)
+    {
+        commove='rock';
+    }
+
+    else if(num >=1/3 && num<2/3)
+    {
+        commove='Paper';
+    }
+
+    if(num >=2/3 && num<1)
+    {
+        commove='Scissor';
+    }
+
+
+    let result='';
+    if(commove === 'rock')
+    {
+        result='You Won...';
+    }
+
+    else if(commove === 'Paper')
+    {
+        result='Tie...';
+    }
+
+    if(commove === 'Scissor')
+    {
+        result='You Lose Hahaha...';
+    }
+
+    document.getElementById('demo').innerHTML=(`You picked Paper. Computer picked ${commove}.${result}`);
+    ">
+        Paper
+    </button>
+
+    <button class="but" onclick="
+        let num=Math.random();
+        let commove='';
+        if(num >=0 && num<1/3)
+        {
+            commove='rock';
+        }
+
+        else if(num >=1/3 && num<2/3)
+        {
+            commove='Paper';
+        }
+
+        if(num >=2/3 && num<1)
+        {
+            commove='Scissor';
+        }
+
+
+        let result='';
+        if(commove === 'rock')
+        {
+            result='You Lose Hahaha...';
+        }
+
+        else if(commove === 'Paper')
+        {
+            result='You Won...';
+        }
+
+        if(commove === 'Scissor')
+        {
+            result='Tie...';
+        }
+
+        document.getElementById('demo').innerHTML=(`You picked Scissor. Computer picked ${commove}.${result}`);
+    ">
+        Scissor
+    </button>
+</div>
+    <div id="demo">
+        
+    </div>
+
+</div>
+</body>
+</html>
