@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <script src="func.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bor">
+        <h1>
+            Rock Paper Scissor
+        </h1>
+
+        <button class="but" onclick="
+            myfunc('rock');
+        ">
+            Rock
+        </button>
+
+        <button class="but" onclick="
+            myfunc('Paper');
+        ">
+            Paper
+        </button>
+
+        <button class="but" onclick="
+            myfunc('Scissors');
+        ">
+            Scissor
+        </button>
+
+        <p class="res"></p>
+        <p class="move"></p>
+        <p class="score"></p>
+        
+        <button class="but" onclick="
+            score.win = 0;
+            score.lose = 0;
+            score.tie = 0;
+            jsScore();
+        ">
+            Re-Set
+        </button>
+
+        <div id="demo"></div>
+    </div>
+</body>
+</html>
